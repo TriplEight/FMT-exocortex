@@ -29,9 +29,9 @@ if ! echo "$TOOL_INPUT" | grep -qE 'git (add.*&&.*git )?commit'; then
 fi
 
 # Governance-репо: из env $IWE_GOVERNANCE_REPO (по умолчанию DS-strategy).
-# Workspace: из env $IWE_WORKSPACE (по умолчанию ~/IWE).
+# Workspace: $IWE_WORKSPACE или $IWE_ROOT (синонимы), default ~/IWE.
 GOV_REPO="${IWE_GOVERNANCE_REPO:-DS-strategy}"
-WORKSPACE="${IWE_WORKSPACE:-$HOME/IWE}"
+WORKSPACE="${IWE_WORKSPACE:-${IWE_ROOT:-$HOME/IWE}}"
 GOV_PATH="$WORKSPACE/$GOV_REPO"
 
 # R4.5 fix (WP-273): trigger ТОЛЬКО по staged files, НЕ по тексту команды.
@@ -157,9 +157,7 @@ if [ -n "$WEEKPLAN" ]; then
     [ ${#WP_MISSING_LIST[@]} -gt 0 ] && WP_MSG="$WP_MSG Пропущены секции (${#WP_MISSING_LIST[@]}): $WP_MISSING_STR."
     [ ${#WP_ERRORS[@]} -gt 0 ] && WP_MSG="$WP_MSG Ошибки структуры: $WP_ERRORS_STR."
     WP_MSG="$WP_MSG Исправь WeekPlan перед коммитом."
-    cat <<EOF
-{"decision": "block", "reason": "$WP_MSG"}
-EOF
+    jq -n --arg reason "$WP_MSG" '{"decision": "block", "reason": $reason}'
     exit 0
   fi
 fi
@@ -176,9 +174,7 @@ if [ ${#MISSING[@]} -gt 0 ] || [ ${#ERRORS[@]} -gt 0 ]; then
   [ ${#ERRORS[@]} -gt 0 ] && MSG="$MSG Ошибки формата/структуры: $ERRORS_STR."
   MSG="$MSG Исправь DayPlan перед коммитом."
 
-  cat <<EOF
-{"decision": "block", "reason": "$MSG"}
-EOF
+  jq -n --arg reason "$MSG" '{"decision": "block", "reason": $reason}'
 else
   cat <<'EOF'
 {"additionalContext": "✅ DayPlan прошёл валидацию: секции, collapsible, непустые блоки, мультипликатор, carry-over."}
