@@ -239,7 +239,7 @@ DAY_NUM=$(date +%-d)
 - [ ] WakaTime + Мультипликатор: часы, бюджет, остаток недели
 - [ ] Итоги дня записаны в DayPlan **(postcondition 9a: grep подтверждён)**
 - [ ] Handoff-валидация: «Завтра начать с» содержит ВСЕ pending РП с конкретным next action
-- [ ] Сводка итогов записана в WeekPlan (`<details>`, обратная хронология) **(postcondition 9b: grep подтверждён)**
+- [ ] Сводка итогов записана в WeekReport (`<details>`, обратная хронология) **(postcondition 9b: grep подтверждён)**
 - [ ] Новое репо → MAPSTRATEGIC.md + Strategy.md
 
 Все ✅ → «День закрыт.» Иначе — указать что осталось.
