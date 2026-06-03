@@ -42,10 +42,13 @@ Versioning: [Semantic Versioning](https://semver.org/).
 
 
 
-## [Unreleased] — обновлено 2026-05-31
+
+## [Unreleased] — обновлено 2026-06-03
 
 ### Added
 
+- `e17ce68` feat(linux): port role agents from launchd to systemd user services
+- `43e8268` feat(WP-377): promote pack-creator + org-dev + spf-guard
 - `f47bf49` feat(WP-348): promote apply-captures defer_until invariant to L1
 - `bc5686f` feat(L1): B-005 reliability обхода Backlog и pending-фаз
 - `fbc5585` feat(L1): promote DP.D.052 v2 формулировок из peer-сессии 2026-05-31-11
@@ -95,6 +98,7 @@ Versioning: [Semantic Versioning](https://semver.org/).
 - `d4e3db2` feat(WP-348): Ф3 — SKILL.md v2 шаблон + генератор каталога + мигратор
 - `2136141` feat: settings-promote.sh + pre-commit HOOK-PATH-CONVENTION gate
 - `333c83d` feat(strategist): complete runner migration — run_skill() for day-open/day-close/week-close/strategy-session
+- `f550e9b` feat(pack-templates): DP.ROLE.NNN Constraint Analyst + DP.SC.NNN + DP.WP.NNN
 
 ### Changed
 
@@ -114,6 +118,7 @@ Versioning: [Semantic Versioning](https://semver.org/).
 
 ### Fixed
 
+- `e46c696` fix(linux): bootstrap .exocortex.env in 8 scripts + pre-commit hook
 - `6b164f6` fix(promote): settings-promote --dry-run пропускает existence check (WP-347 PD-2 followup)
 - `c2e96e6` fix(promote): regenerate FMT skills-catalog.yaml (B12a)
 - `0ccb1e2` fix(catalog): generate-executor-catalog.py — раскрывать env IWE_GOVERNANCE_REPO в DEFAULT_OUTPUT
@@ -149,6 +154,7 @@ Versioning: [Semantic Versioning](https://semver.org/).
 - `72f7572` fix: hook paths — $CLAUDE_PROJECT_DIR/ convention for all hook commands
 - `e337183` fix(manifest): remove strategist prompts from deprecated_files — runner still uses them
 - `5bffbc9` fix: replace hardcoded DS-strategy with GOVERNANCE_DIR/GOVERNANCE_REPO env vars
+- `2c5e91d` fix(pack-templates): DP.WP.NNN — добавить §6 пример Stage Dependency Map
 
 
 ## [0.34.1] — 2026-05-21
