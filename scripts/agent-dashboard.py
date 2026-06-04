@@ -222,7 +222,7 @@ def call_mcp(method: str, params: dict, token: str) -> dict:
         return json.loads(resp.read())
 
 
-def get_agents(token: str) -> list[dict]:
+def get_agents(token: str, _retry: bool = False) -> list[dict]:
     """Получить список агентов через agent_status_list."""
     try:
         result = call_mcp(
@@ -238,11 +238,11 @@ def get_agents(token: str) -> list[dict]:
         data = json.loads(text)
         return data.get("agents", [])
     except urllib.error.HTTPError as e:
-        if e.code == 401:
-            # Токен протух — пробуем обновить и повторить
+        if e.code == 401 and not _retry:
+            # Токен протух — пробуем обновить и повторить (максимум 1 раз)
             new_token = refresh_token()
             if new_token:
-                return get_agents(new_token)
+                return get_agents(new_token, _retry=True)
             die("Токен истёк, обновить не удалось. Перезапусти `hermes setup`.")
         die(f"MCP-сервер вернул HTTP {e.code}: {e.reason}")
     except urllib.error.URLError as e:
