@@ -696,6 +696,12 @@
       "path": "roles/strategist/prompts/strategy-session-weekly/appendix/dt-guide-prep.md"
     },
     {
+      "path": "roles/strategist/prompts/strategy-session-weekly/appendix/consent-check.md"
+    },
+    {
+      "path": "roles/strategist/prompts/strategy-session-weekly/appendix/dt-guide-prep.md"
+    },
+    {
       "path": "roles/strategist/prompts/strategy-session-weekly/jump-handler.md"
     },
     {
@@ -1077,7 +1083,8 @@
     {
       "path": "roles/synchronizer/scripts/systemd/iwe-exocortex-scheduler.timer",
       "reason": "systemd template — processed by build-runtime.sh, not delivered directly"
-    }
+    },
+    "inbox/fleeting-notes.md"
   ],
   "deprecated_files": [
     {
