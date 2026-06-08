@@ -957,6 +957,18 @@
       "path": "templates/strategy-skeleton/README.md"
     },
     {
+      "path": "memory/distinctions-warm.md"
+    },
+    {
+      "path": "memory/roles-detail.md"
+    },
+    {
+      "path": ".claude/skills/kimi-peer-writer/modes.md"
+    },
+    {
+      "path": ".claude/skills/peer-conversation/modes.md"
+    },
+    {
       "path": "update.sh"
     }
   ],
