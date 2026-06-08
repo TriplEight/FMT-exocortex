@@ -1,6 +1,6 @@
 ---
 name: bottleneck-pick
-description: "Скилл IWE — см. тело файла"
+description: "TOC-анализ ограничения: выявить bottleneck из списка РП / недели / конвейера пилота"
 version: 1.0.0
 layer: L1
 status: active
