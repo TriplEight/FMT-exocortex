@@ -3,6 +3,18 @@
   "description": "Манифест платформенных файлов FMT-exocortex-template. Используется update.sh для доставки обновлений.",
   "files": [
     {
+      "path": "AGENTS.md"
+    },
+    {
+      "path": "CHANGELOG.md"
+    },
+    {
+      "path": "CHANGELOG.md"
+    },
+    {
+      "path": "CHANGELOG.md"
+    },
+    {
       "path": ".claude/agents/wp-sync-actualizer.md"
     },
     {
@@ -10,9 +22,6 @@
     },
     {
       "path": ".claude/config/capture-detectors.sh"
-    },
-    {
-      "path": ".claude/detectors/README.md"
     },
     {
       "path": ".claude/detectors/detector_decision.sh"
@@ -24,6 +33,9 @@
       "path": ".claude/detectors/detector_pattern_awareness.sh"
     },
     {
+      "path": ".claude/detectors/README.md"
+    },
+    {
       "path": ".claude/hooks/agent-trace-recorder.sh"
     },
     {
@@ -33,7 +45,13 @@
       "path": ".claude/hooks/capture-bus.sh"
     },
     {
+      "path": ".claude/hooks/check-trash.sh"
+    },
+    {
       "path": ".claude/hooks/close-gate-reminder.sh"
+    },
+    {
+      "path": ".claude/hooks/destructive-guard.sh"
     },
     {
       "path": ".claude/hooks/dry-run-gate.sh"
@@ -93,6 +111,9 @@
       "path": ".claude/lib/resolve_target_repo.sh"
     },
     {
+      "path": "CLAUDE.md"
+    },
+    {
       "path": ".claude/parity-contract.yaml"
     },
     {
@@ -123,21 +144,6 @@
       "path": ".claude/settings.json"
     },
     {
-      "path": ".claude/skills-catalog.yaml"
-    },
-    {
-      "path": ".claude/skills-catalog.yaml"
-    },
-    {
-      "path": ".claude/skills/SKILL-INDEX.yaml"
-    },
-    {
-      "path": ".claude/skills/SKILL-INDEX.yaml"
-    },
-    {
-      "path": ".claude/skills/_template/SKILL.md"
-    },
-    {
       "path": ".claude/skills/agent-fault/SKILL.md"
     },
     {
@@ -156,10 +162,13 @@
       "path": ".claude/skills/bottleneck-pick/SKILL.md"
     },
     {
-      "path": ".claude/skills/check-secret/SKILL.md"
+      "path": ".claude/skills-catalog.yaml"
     },
     {
       "path": ".claude/skills/check-secret/check.sh"
+    },
+    {
+      "path": ".claude/skills/check-secret/SKILL.md"
     },
     {
       "path": ".claude/skills/consent/SKILL.md"
@@ -198,10 +207,10 @@
       "path": ".claude/skills/ke/SKILL.md"
     },
     {
-      "path": ".claude/skills/kimi-peer-writer/SKILL.md"
+      "path": ".claude/skills/kimi-peer-writer/modes.md"
     },
     {
-      "path": ".claude/skills/kimi-peer-writer/modes.md"
+      "path": ".claude/skills/kimi-peer-writer/SKILL.md"
     },
     {
       "path": ".claude/skills/lesson-close/SKILL.md"
@@ -225,10 +234,10 @@
       "path": ".claude/skills/pack-new/SKILL.md"
     },
     {
-      "path": ".claude/skills/peer-conversation/SKILL.md"
+      "path": ".claude/skills/peer-conversation/modes.md"
     },
     {
-      "path": ".claude/skills/peer-conversation/modes.md"
+      "path": ".claude/skills/peer-conversation/SKILL.md"
     },
     {
       "path": ".claude/skills/personal-guide-render/SKILL.md"
@@ -252,7 +261,13 @@
       "path": ".claude/skills/setup-wakatime/SKILL.md"
     },
     {
+      "path": ".claude/skills/SKILL-INDEX.yaml"
+    },
+    {
       "path": ".claude/skills/strategy-session/SKILL.md"
+    },
+    {
+      "path": ".claude/skills/_template/SKILL.md"
     },
     {
       "path": ".claude/skills/think/SKILL.md"
@@ -270,9 +285,6 @@
       "path": ".claude/skills/verify/verify-pedagogy-subsection.md"
     },
     {
-      "path": ".claude/skills/w-reflection/SKILL.md"
-    },
-    {
       "path": ".claude/skills/week-close-pilot/SKILL.md"
     },
     {
@@ -282,94 +294,10 @@
       "path": ".claude/skills/wp-new/SKILL.md"
     },
     {
+      "path": ".claude/skills/w-reflection/SKILL.md"
+    },
+    {
       "path": ".claude/sync-manifest.yaml"
-    },
-    {
-      "path": ".githooks/pre-commit"
-    },
-    {
-      "path": ".github/ISSUE_TEMPLATE/bug_report.md"
-    },
-    {
-      "path": ".github/ISSUE_TEMPLATE/feature_request.md"
-    },
-    {
-      "path": ".github/workflows/cloud-scheduler.yml"
-    },
-    {
-      "path": ".github/workflows/notify-update.yml"
-    },
-    {
-      "path": ".github/workflows/post-release-audit.yml"
-    },
-    {
-      "path": ".github/workflows/stale.yml"
-    },
-    {
-      "path": ".github/workflows/validate-template.yml"
-    },
-    {
-      "path": ".gitignore"
-    },
-    {
-      "path": ".mcp.json"
-    },
-    {
-      "path": ".stignore"
-    },
-    {
-      "path": "AGENTS-agent-blocks.md"
-    },
-    {
-      "path": "AGENTS.md"
-    },
-    {
-      "path": "CHANGELOG.md"
-    },
-    {
-      "path": "CLAUDE.md"
-    },
-    {
-      "path": "ONTOLOGY.md"
-    },
-    {
-      "path": "REPO-TYPE.md"
-    },
-    {
-      "path": "docs/AGENT-FAULT-PROCESS.md"
-    },
-    {
-      "path": "docs/BROWSER-CI-TEMPLATE.md"
-    },
-    {
-      "path": "docs/DATA-POLICY.md"
-    },
-    {
-      "path": "docs/IWE-HELP.md"
-    },
-    {
-      "path": "docs/LEARNING-PATH.md"
-    },
-    {
-      "path": "docs/PACK-CREATION.md"
-    },
-    {
-      "path": "docs/PLATFORM-COMPAT.md"
-    },
-    {
-      "path": "docs/PORTABILITY.md"
-    },
-    {
-      "path": "docs/QUICK-START.md"
-    },
-    {
-      "path": "docs/RELEASE-PROCESS.md"
-    },
-    {
-      "path": "docs/SCRIPT-PROMOTION.md"
-    },
-    {
-      "path": "docs/SETUP-GUIDE.md"
     },
     {
       "path": "docs/adr/ADR-001-setup-in-template.md"
@@ -384,13 +312,10 @@
       "path": "docs/agent-coordination-manifest.md"
     },
     {
-      "path": "docs/developer/README.md"
+      "path": "docs/AGENT-FAULT-PROCESS.md"
     },
     {
-      "path": "docs/developer/card-template.md"
-    },
-    {
-      "path": "docs/developer/developer-guide.md"
+      "path": "docs/DATA-POLICY.md"
     },
     {
       "path": "docs/hindsight-setup.md"
@@ -399,7 +324,10 @@
       "path": "docs/inter-agent-handoff.md"
     },
     {
-      "path": "docs/maintaining-skills.md"
+      "path": "docs/IWE-HELP.md"
+    },
+    {
+      "path": "docs/LEARNING-PATH.md"
     },
     {
       "path": "docs/migrations/strategy-v0.27.0.md"
@@ -423,13 +351,34 @@
       "path": "docs/onboarding/web-onboarding.md"
     },
     {
+      "path": "docs/PACK-CREATION.md"
+    },
+    {
+      "path": "docs/PLATFORM-COMPAT.md"
+    },
+    {
+      "path": "docs/PORTABILITY.md"
+    },
+    {
       "path": "docs/principles-vs-skills.md"
+    },
+    {
+      "path": "docs/QUICK-START.md"
+    },
+    {
+      "path": "docs/RELEASE-PROCESS.md"
     },
     {
       "path": "docs/roles-catalog.md"
     },
     {
+      "path": "docs/SCRIPT-PROMOTION.md"
+    },
+    {
       "path": "docs/scripts-catalog.md"
+    },
+    {
+      "path": "docs/SETUP-GUIDE.md"
     },
     {
       "path": "docs/skills-catalog.md"
@@ -447,19 +396,13 @@
       "path": "exocortex/hindsight/start.sh"
     },
     {
-      "path": "extensions/README.md"
-    },
-    {
       "path": "extensions/agent-inbox/README.md"
-    },
-    {
-      "path": "extensions/agent-inbox/SPEC.md"
     },
     {
       "path": "extensions/agent-inbox/scripts/iwe-agent-dispatcher.py"
     },
     {
-      "path": "extensions/agent-inbox/templates/_template.md"
+      "path": "extensions/agent-inbox/SPEC.md"
     },
     {
       "path": "extensions/agent-inbox/templates/analyze-section.md"
@@ -474,10 +417,37 @@
       "path": "extensions/agent-inbox/templates/soak-verify.md"
     },
     {
+      "path": "extensions/agent-inbox/templates/_template.md"
+    },
+    {
       "path": "extensions/day-close.checks.session-orphans.md"
     },
     {
       "path": "extensions/day-open.after.session-orphans.md"
+    },
+    {
+      "path": "extensions/local-llm/ADR-001-local-llm-stack.md"
+    },
+    {
+      "path": "extensions/local-llm/detect-hardware.sh"
+    },
+    {
+      "path": "extensions/local-llm/install-local-llm.sh"
+    },
+    {
+      "path": "extensions/local-llm/iwe-local-llm.sh"
+    },
+    {
+      "path": "extensions/local-llm/model-catalog.yaml"
+    },
+    {
+      "path": "extensions/local-llm/model-lifecycle.py"
+    },
+    {
+      "path": "extensions/local-llm/model-monitor.py"
+    },
+    {
+      "path": "extensions/local-llm/README.md"
     },
     {
       "path": "extensions/protocol-close.after.session-record.md"
@@ -492,7 +462,19 @@
       "path": "extensions/protocol-open.after.fault.md"
     },
     {
-      "path": "memory/MEMORY.md"
+      "path": "extensions/README.md"
+    },
+    {
+      "path": ".githooks/pre-commit"
+    },
+    {
+      "path": ".gitignore"
+    },
+    {
+      "path": "inbox/fleeting-notes.md"
+    },
+    {
+      "path": ".mcp.json"
     },
     {
       "path": "memory/checklists.md"
@@ -534,6 +516,9 @@
       "path": "memory/memory-lifecycle-spec.md"
     },
     {
+      "path": "memory/MEMORY.md"
+    },
+    {
       "path": "memory/navigation.md"
     },
     {
@@ -552,9 +537,6 @@
       "path": "memory/protocol-work.md"
     },
     {
-      "path": "memory/r-questionnaire.md"
-    },
-    {
       "path": "memory/repo-type-rules.md"
     },
     {
@@ -565,6 +547,9 @@
     },
     {
       "path": "memory/routing-vocab.md"
+    },
+    {
+      "path": "memory/r-questionnaire.md"
     },
     {
       "path": "memory/sota-prompt-cache.md"
@@ -579,13 +564,7 @@
       "path": "memory/templates-dayplan.md"
     },
     {
-      "path": "pack-templates/.github/README.md"
-    },
-    {
-      "path": "pack-templates/.github/scripts/check-pack-collisions.sh"
-    },
-    {
-      "path": "pack-templates/.github/workflows/pack-lint.yml"
+      "path": "ONTOLOGY.md"
     },
     {
       "path": "pack-templates/digital-platform/02-domain-entities/DP.ROLE.NNN-constraint-analyst.md"
@@ -609,13 +588,16 @@
       "path": "pack-templates/digital-platform/08-service-clauses/DP.SC.NNN-external-session-request.md"
     },
     {
-      "path": "roles/README.md"
+      "path": "pack-templates/.github/README.md"
     },
     {
-      "path": "roles/ROLE-CONTRACT.md"
+      "path": "pack-templates/.github/scripts/check-pack-collisions.sh"
     },
     {
-      "path": "roles/auditor/README.md"
+      "path": "pack-templates/.github/workflows/pack-lint.yml"
+    },
+    {
+      "path": "REPO-TYPE.md"
     },
     {
       "path": "roles/auditor/install.sh"
@@ -627,10 +609,10 @@
       "path": "roles/auditor/prompts/audit-plan-consistency.md"
     },
     {
-      "path": "roles/auditor/role.yaml"
+      "path": "roles/auditor/README.md"
     },
     {
-      "path": "roles/extractor/README.md"
+      "path": "roles/auditor/role.yaml"
     },
     {
       "path": "roles/extractor/config/feedback-log.md"
@@ -660,6 +642,9 @@
       "path": "roles/extractor/prompts/session-close.md"
     },
     {
+      "path": "roles/extractor/README.md"
+    },
+    {
       "path": "roles/extractor/role.yaml"
     },
     {
@@ -669,10 +654,19 @@
       "path": "roles/extractor/scripts/launchd/com.extractor.inbox-check.plist"
     },
     {
+      "path": "roles/extractor/scripts/systemd/iwe-extractor-inbox-check.service"
+    },
+    {
+      "path": "roles/extractor/scripts/systemd/iwe-extractor-inbox-check.timer"
+    },
+    {
+      "path": "roles/README.md"
+    },
+    {
       "path": "roles/role-boundaries.md"
     },
     {
-      "path": "roles/strategist/README.md"
+      "path": "roles/ROLE-CONTRACT.md"
     },
     {
       "path": "roles/strategist/install.sh"
@@ -702,10 +696,10 @@
       "path": "roles/strategist/prompts/session-prep.md"
     },
     {
-      "path": "roles/strategist/prompts/strategy-session-monthly.md"
+      "path": "roles/strategist/prompts/strategy-session.md"
     },
     {
-      "path": "roles/strategist/prompts/strategy-session-weekly.md"
+      "path": "roles/strategist/prompts/strategy-session-monthly.md"
     },
     {
       "path": "roles/strategist/prompts/strategy-session-weekly/appendix/consent-check.md"
@@ -715,6 +709,9 @@
     },
     {
       "path": "roles/strategist/prompts/strategy-session-weekly/jump-handler.md"
+    },
+    {
+      "path": "roles/strategist/prompts/strategy-session-weekly.md"
     },
     {
       "path": "roles/strategist/prompts/strategy-session-weekly/steps/00-open.md"
@@ -756,13 +753,13 @@
       "path": "roles/strategist/prompts/strategy-session-weekly/steps/08-confirm.md"
     },
     {
-      "path": "roles/strategist/prompts/strategy-session.md"
-    },
-    {
       "path": "roles/strategist/prompts/update-priorities.md"
     },
     {
       "path": "roles/strategist/prompts/week-review.md"
+    },
+    {
+      "path": "roles/strategist/README.md"
     },
     {
       "path": "roles/strategist/role.yaml"
@@ -783,13 +780,25 @@
       "path": "roles/strategist/scripts/strategist.sh"
     },
     {
-      "path": "roles/synchronizer/README.md"
+      "path": "roles/strategist/scripts/systemd/iwe-strategist-morning.service"
+    },
+    {
+      "path": "roles/strategist/scripts/systemd/iwe-strategist-morning.timer"
+    },
+    {
+      "path": "roles/strategist/scripts/systemd/iwe-strategist-weekreview.service"
+    },
+    {
+      "path": "roles/strategist/scripts/systemd/iwe-strategist-weekreview.timer"
     },
     {
       "path": "roles/synchronizer/config.yaml"
     },
     {
       "path": "roles/synchronizer/install.sh"
+    },
+    {
+      "path": "roles/synchronizer/README.md"
     },
     {
       "path": "roles/synchronizer/role.yaml"
@@ -822,6 +831,12 @@
       "path": "roles/synchronizer/scripts/sync-files.sh"
     },
     {
+      "path": "roles/synchronizer/scripts/systemd/iwe-exocortex-scheduler.service"
+    },
+    {
+      "path": "roles/synchronizer/scripts/systemd/iwe-exocortex-scheduler.timer"
+    },
+    {
       "path": "roles/synchronizer/scripts/templates/extractor.sh"
     },
     {
@@ -832,9 +847,6 @@
     },
     {
       "path": "roles/synchronizer/scripts/video-scan.sh"
-    },
-    {
-      "path": "roles/verifier/README.md"
     },
     {
       "path": "roles/verifier/install.sh"
@@ -849,6 +861,9 @@
       "path": "roles/verifier/prompts/verify-wp-acceptance.md"
     },
     {
+      "path": "roles/verifier/README.md"
+    },
+    {
       "path": "roles/verifier/role.yaml"
     },
     {
@@ -858,158 +873,111 @@
       "path": "setup.sh"
     },
     {
-      "path": "setup/build-runtime.sh"
-    },
-    {
-      "path": "setup/detector-fixtures/README.md"
-    },
-    {
-      "path": "setup/detector-fixtures/detector_07/positive_backtick_slash.md"
-    },
-    {
-      "path": "setup/detector-regex.sh"
-    },
-    {
-      "path": "setup/install-iwe-paths.sh"
-    },
-    {
-      "path": "setup/integration-contract-validator.sh"
-    },
-    {
-      "path": "setup/optional/COVER-IMAGES.md"
-    },
-    {
-      "path": "setup/optional/README.md"
-    },
-    {
-      "path": "setup/optional/generate-post-image.py"
-    },
-    {
-      "path": "setup/optional/pomodoro-alert.plist"
-    },
-    {
-      "path": "setup/optional/pomodoro-alert.py"
-    },
-    {
-      "path": "setup/optional/setup-agent-workspace.sh"
-    },
-    {
-      "path": "setup/optional/setup-calendar.sh"
-    },
-    {
-      "path": "setup/optional/setup-cloud-scheduler.sh"
-    },
-    {
-      "path": "setup/promote-fixtures/README.md"
-    },
-    {
-      "path": "setup/promote-fixtures/sample-hook.sh"
-    },
-    {
-      "path": "setup/promote-fixtures/sample-script.sh"
-    },
-    {
-      "path": "setup/promote-fixtures/sample-settings.json"
-    },
-    {
-      "path": "setup/promote-fixtures/sample-skill/SKILL.md"
-    },
-    {
-      "path": "setup/promote-fixtures/sample-skill/scripts/sample-tool.sh"
-    },
-    {
-      "path": "setup/release-audit-prompt.md"
-    },
-    {
-      "path": "setup/smoke-test-fresh-install.sh"
-    },
-    {
-      "path": "setup/test-detectors.sh"
-    },
-    {
-      "path": "setup/ux-walkthrough-prompt.md"
-    },
-    {
-      "path": "setup/validate-template.sh"
-    },
-    {
       "path": "shared/rubrics/form-089.yaml"
     },
     {
-      "path": "templates/strategy-skeleton/CLAUDE.md"
-    },
-    {
-      "path": "templates/strategy-skeleton/Lifework/README.md"
-    },
-    {
-      "path": "templates/strategy-skeleton/README.md"
-    },
-    {
-      "path": "templates/strategy-skeleton/current/README.md"
-    },
-    {
-      "path": "templates/strategy-skeleton/docs/Caliber-artifacts-tracker.md"
-    },
-    {
-      "path": "templates/strategy-skeleton/docs/Dissatisfactions.md"
-    },
-    {
-      "path": "templates/strategy-skeleton/docs/Strategy.md"
-    },
-    {
-      "path": "templates/strategy-skeleton/docs/WP-REGISTRY.md"
-    },
-    {
-      "path": "templates/strategy-skeleton/inbox/fleeting-notes.md"
+      "path": ".stignore"
     },
     {
       "path": "update.sh"
     }
   ],
   "excluded_paths": [
-    {
-      "path": "roles/extractor/scripts/systemd/iwe-extractor-inbox-check.service",
-      "reason": "systemd template — processed by build-runtime.sh, not delivered directly"
-    },
-    {
-      "path": "roles/extractor/scripts/systemd/iwe-extractor-inbox-check.timer",
-      "reason": "systemd template — processed by build-runtime.sh, not delivered directly"
-    },
-    {
-      "path": "roles/strategist/scripts/systemd/iwe-strategist-morning.service",
-      "reason": "systemd template — processed by build-runtime.sh, not delivered directly"
-    },
-    {
-      "path": "roles/strategist/scripts/systemd/iwe-strategist-morning.timer",
-      "reason": "systemd template — processed by build-runtime.sh, not delivered directly"
-    },
-    {
-      "path": "roles/strategist/scripts/systemd/iwe-strategist-weekreview.service",
-      "reason": "systemd template — processed by build-runtime.sh, not delivered directly"
-    },
-    {
-      "path": "roles/strategist/scripts/systemd/iwe-strategist-weekreview.timer",
-      "reason": "systemd template — processed by build-runtime.sh, not delivered directly"
-    },
-    {
-      "path": "roles/synchronizer/scripts/systemd/iwe-exocortex-scheduler.service",
-      "reason": "systemd template — processed by build-runtime.sh, not delivered directly"
-    },
-    {
-      "path": "roles/synchronizer/scripts/systemd/iwe-exocortex-scheduler.timer",
-      "reason": "systemd template — processed by build-runtime.sh, not delivered directly"
-    },
-    {
-      "path": "inbox/fleeting-notes.md",
-      "reason": "personal notes — user-specific content, not part of template delivery"
-    },
-    "scripts/",
-    "scripts/tests/",
-    "promotion-status.yaml",
     "AGENTS-agent-blocks.md",
     "docs/BROWSER-CI-TEMPLATE.md",
+    "docs/developer/card-template.md",
+    "docs/developer/developer-guide.md",
+    "docs/developer/README.md",
     "docs/maintaining-skills.md",
-    "docs/release-audit-log.md"
+    "docs/release-audit-log.md",
+    "promotion-status.yaml",
+    "scripts/active-wp-sweep.sh",
+    "scripts/agent-dashboard.py",
+    "scripts/agent_fault_remind.py",
+    "scripts/agent_fault_remind.sh",
+    "scripts/archive-done-wp.sh",
+    "scripts/audit-ad-hoc-roles.py",
+    "scripts/backup-icloud.sh",
+    "scripts/changelog-append.sh",
+    "scripts/changelog-flush.sh",
+    "scripts/check-dirty-repos.sh",
+    "scripts/check-manifest-coverage.py",
+    "scripts/check-open-sessions.sh",
+    "scripts/check-script-collisions.sh",
+    "scripts/check-setup-update-parity.sh",
+    "scripts/check-wp-format.py",
+    "scripts/claude-peer-adapter.sh",
+    "scripts/close-wp.sh",
+    "scripts/content-filter-apply.py",
+    "scripts/content-filter-map.txt",
+    "scripts/coverage-skills.sh",
+    "scripts/create-skill.sh",
+    "scripts/create-wp.sh",
+    "scripts/day-close.sh",
+    "scripts/day-open-scaffold.sh",
+    "scripts/day-open-smoke-extended.sh",
+    "scripts/day-open-smoke.sh",
+    "scripts/fmt-critical-alert.sh",
+    "scripts/generate-catalogs.py",
+    "scripts/generate-diagnose-iwe-skill.py",
+    "scripts/generate-executor-catalog.py",
+    "scripts/generate-helper-catalog.py",
+    "scripts/generate-skills-catalog.sh",
+    "scripts/headless-runner.sh",
+    "scripts/hook-promote.sh",
+    "scripts/iwe-agent-dispatcher.py",
+    "scripts/iwe-audit.sh",
+    "scripts/iwe-backup-check.sh",
+    "scripts/iwe-catalog-list.py",
+    "scripts/iwe-drift-helpers/check-arch-version.sh",
+    "scripts/iwe-drift-helpers/check-status-legend.sh",
+    "scripts/iwe-drift.sh",
+    "scripts/iwe-grep-secret.sh",
+    "scripts/iwe-trace.py",
+    "scripts/ke-classify.sh",
+    "scripts/ke-queue-stats.sh",
+    "scripts/kimi-peer-adapter.sh",
+    "scripts/lesson-close.sh",
+    "scripts/memory-active-wp-update.sh",
+    "scripts/memory-bleed.sh",
+    "scripts/memory-health.sh",
+    "scripts/memory-migrate.sh",
+    "scripts/memory-validate.sh",
+    "scripts/migrate-initial-marker.sh",
+    "scripts/migrate-skills-to-v2.sh",
+    "scripts/migrate-to-runtime-target.sh",
+    "scripts/pack-ci-install.sh",
+    "scripts/peer-adapter-filter.py",
+    "scripts/pending-phases-sweep.sh",
+    "scripts/post-update-check-skills.sh",
+    "scripts/promote-common.sh",
+    "scripts/restore-from-exocortex.sh",
+    "scripts/route-task.sh",
+    "scripts/script-promote.sh",
+    "scripts/server-calendar.sh",
+    "scripts/server-news.sh",
+    "scripts/session-dispatcher-tsekh.py",
+    "scripts/settings-promote.sh",
+    "scripts/setup-extractor-feeders.sh",
+    "scripts/skill-promote.sh",
+    "scripts/skills-pull.sh",
+    "scripts/smoke-clean-env.sh",
+    "scripts/staging-audit.sh",
+    "scripts/style-check-post-run.sh",
+    "scripts/sync-agent-instructions.sh",
+    "scripts/sync-communication-style.py",
+    "scripts/sync-communication-style.yaml.example",
+    "scripts/sync_feedback_to_memory.py",
+    "scripts/sync-version-badge.sh",
+    "scripts/template-sync.sh",
+    "scripts/test-route-task.sh",
+    "scripts/tests/conftest.py",
+    "scripts/tests/test_agent_dashboard.py",
+    "scripts/validate-fmt-scripts.sh",
+    "scripts/validate-skill.sh",
+    "scripts/verify-manifest.sh",
+    "scripts/week-draft-append.sh",
+    "scripts/week-draft-init.sh"
   ],
   "deprecated_files": [
     {

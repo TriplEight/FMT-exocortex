@@ -8,7 +8,7 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 MANIFEST="$SCRIPT_DIR/update-manifest.json"
 
 # Версия из CHANGELOG.md (первый ## [X.Y.Z])
-VERSION=$(grep -m1 '^\#\# \[' "$SCRIPT_DIR/CHANGELOG.md" | sed 's/.*\[\(.*\)\].*/\1/')
+VERSION=$(grep -m1 '^\#\# \[[0-9]' "$SCRIPT_DIR/CHANGELOG.md" | sed 's/.*\[\(.*\)\].*/\1/')
 
 if [ -z "$VERSION" ]; then
     echo "ERROR: Не удалось извлечь версию из CHANGELOG.md"
@@ -20,15 +20,20 @@ echo "Генерация манифеста v$VERSION..."
 # === Исключения, которые НЕ попадают ни в files, ни в excluded_paths ===
 SKIP_PATTERNS=(
     ".git/"
+    ".github/"
     ".DS_Store"
     "generate-manifest.sh"
     "update-manifest.json"
+    "setup/"
+    "seed/"
+    "templates/"
 )
 
 # === Исключения, которые идут в excluded_paths (dev-only, не раздаются пользователям) ===
 EXCLUDED_PATTERNS=(
     "scripts/"
     "scripts/tests/"
+    "docs/developer/"
 )
 
 EXCLUDED_EXACT=(
@@ -63,7 +68,7 @@ while IFS= read -r rel; do
     skip=false
     for pattern in "${SKIP_PATTERNS[@]}"; do
         case "$rel" in
-            $pattern*|*/$pattern*) skip=true; break ;;
+            $pattern*) skip=true; break ;;
         esac
     done
     [[ "$(basename "$rel")" == ".gitkeep" ]] && skip=true
@@ -89,7 +94,7 @@ while IFS= read -r rel; do
     is_files_exclude=false
     for pattern in "${FILES_EXCLUDE_PATTERNS[@]}"; do
         case "$rel" in
-            $pattern*|*/$pattern*) is_files_exclude=true; break ;;
+            $pattern*) is_files_exclude=true; break ;;
         esac
     done
     for exact in "${FILES_EXCLUDE_EXACT[@]}"; do
