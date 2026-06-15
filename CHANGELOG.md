@@ -27,10 +27,14 @@ Versioning: [Semantic Versioning](https://semver.org/).
 
 
 
-## [Unreleased] — обновлено 2026-06-14
+
+## [Unreleased] — обновлено 2026-06-15
 
 ### Added
 
+- `53cd985` feat(day-open): add ТВС labeling step to skill template (§6b2)
+- `36febfd` feat(strategy): модель ТВС в шаблон (стратегирование + ОРЗ)
+- `673474d` feat(WP-388): проекция базы стиля — 4 новых элемента регистра (зеркало L0)
 - `dd117c5` feat(styles): WP-412 Ф11 — дисциплина языковых стилей в шаблон IWE
 - `83434ea` feat: promote pull-on-touch.sh — детерминированный Pull-on-Touch (CLAUDE.md §2 п.5)
 - `1f0eba6` feat(linux): cross-platform portability — env-bootstrap + systemd + OS-aware (clean integration of #179/#181)
@@ -94,10 +98,11 @@ Versioning: [Semantic Versioning](https://semver.org/).
 - `6be164d` feat(hindsight): WP-337/А.13 FMT template — docker-compose, start, launchd, docs
 - `43e8268` feat(WP-377): promote pack-creator + org-dev + spf-guard
 - `f47bf49` feat(WP-348): promote apply-captures defer_until invariant to L1
-- `bc5686f` feat(L1): B-005 reliability обхода Backlog и pending-фаз
 
 ### Changed
 
+- `6c8a4cd` docs(WP-362 Ф8.1): developer/README — тиры T1-T4 → T0-T4 (консистентность с каноном)
+- `6fdb1b0` docs(WP-362): Ф8 — FMT/docs self-contained онбординг
 - `8b5d570` refactor(day-open+manifest): SHLC1 dead code + DOPD1 lazy templates
 - `3922f45` refactor(COL-06): rename communication style levels L0/L1/L2 → S0/S1/S2
 - `5b617a9` docs: #171 правки гайда для внешнего контрибьютора + #177 §9 реальный планировщик (#189)
@@ -135,6 +140,10 @@ Versioning: [Semantic Versioning](https://semver.org/).
 
 ### Fixed
 
+- `8073146` fix(WP-7): FMT delivery — .claude/styles propagation, manifest sync, smoke Test 6e
+- `cb8a1a6` fix(COL-06): communication-style-base.md — L1 → S1 (авторский слой)
+- `06b9d79` fix(WP-376): A52/A49/A50/A51 — template hygiene и agentigore sample
+- `c869a3c` fix(pull-on-touch): autostash вместо пропуска-на-грязном — тянет даже на dirty-репо
 - `5cd2c24` fix(day-open): уточнить guard и добавить backlink в templates.md
 - `158b31b` fix(backup): #172 cloud-scheduler stops clobbering exocortex/CLAUDE.md (#188)
 - `9725133` fix(notify): #169 DayPlan Telegram broken — resolve templates from .iwe-runtime + force UTF-8 (#187)
