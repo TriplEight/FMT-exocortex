@@ -189,7 +189,16 @@ if [[ -f "$PROMOTE_COMMON" ]]; then
     record_promotion ".claude/skills/$skill_name" "skill" "" "" "na"
 fi
 
+# ── Шаг 9. Пересборка манифеста ──────────────────────────────────────────────
+MANIFEST_SCRIPT="$FMT_DIR/generate-manifest.sh"
+if [[ -f "$MANIFEST_SCRIPT" ]]; then
+    echo "🔄 Пересборка update-manifest.json..."
+    bash "$MANIFEST_SCRIPT" 2>&1
+else
+    echo "⚠️  generate-manifest.sh не найден — обнови update-manifest.json вручную"
+fi
+
 echo ""
 echo "Следующий шаг:"
-echo "  cd $FMT_DIR && git add .claude/skills/$skill_name .claude/skills-catalog.yaml CHANGELOG.md promotion-status.yaml"
+echo "  cd $FMT_DIR && git add .claude/skills/$skill_name .claude/skills-catalog.yaml CHANGELOG.md promotion-status.yaml update-manifest.json"
 echo "  git commit -m 'feat(WP-7/SP1): promote skill $skill_name to platform (L1)'"
