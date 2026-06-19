@@ -78,10 +78,10 @@
       "path": ".claude/hooks/pull-on-touch.sh"
     },
     {
-      "path": ".claude/hooks/rule-engine.sh"
+      "path": ".claude/hooks/response-clarity-hook.sh"
     },
     {
-      "path": ".claude/hooks/response-clarity-hook.sh"
+      "path": ".claude/hooks/rule-engine.sh"
     },
     {
       "path": ".claude/hooks/wakatime-heartbeat.sh"

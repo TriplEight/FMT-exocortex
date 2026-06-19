@@ -2,7 +2,7 @@
 # see DP.SC.153
 # НЕ редактировать вручную — перегенерировать через generate-skills-catalog.sh
 #
-generated: 2026-06-18T06:14:29Z
+generated: 2026-06-19T13:26:41Z
 skills_dir: .claude/skills
 
 skills:
@@ -221,12 +221,13 @@ skills:
     - fpf
   - id: iwe-bug-report
     name: "iwe-bug-report"
-    description: "Report a bug or platform issue in IWE. Creates a GitHub issue in FMT-exocortex-template."
-    version: 0.0.0
-    layer: unknown
+    description: "Сообщить об ошибке или проблеме платформы IWE. Создаёт GitHub issue в FMT-exocortex-template."
+    version: 1.0.0
+    layer: L1
     status: active
     triggers:
-      slash: []
+      slash:
+        - /iwe-bug-report
     depends_on: []
     invoked_by:
     - iwe-bug-report

@@ -937,6 +937,55 @@ if [ -f "$MANIFEST" ]; then
         && echo "  • update-manifest.json: заменён remote manifest (v$UPSTREAM_VERSION)"
 fi
 
+# === Step 6f: Orphan detection — L1 files not in manifest ===
+# Warn about files present on disk in L1 directories that are not listed in
+# update-manifest.json (neither in files[] nor deprecated_files[]).
+# These may be stale user customisations or files left over from a renamed skill.
+# Never auto-deletes; always informational only.
+if command -v python3 &>/dev/null && [ -f "$SCRIPT_DIR/update-manifest.json" ]; then
+    ORPHAN_OUTPUT=$(python3 - <<'PYEOF'
+import json, os
+
+script_dir = os.path.dirname(os.path.abspath(__file__))
+manifest_path = os.path.join(script_dir, "update-manifest.json")
+
+with open(manifest_path) as f:
+    manifest = json.load(f)
+
+known = set(manifest.get("files", []))
+deprecated = set(manifest.get("deprecated_files", []))
+all_known = known | deprecated
+
+L1_DIRS = [".claude/hooks", ".claude/rules", ".claude/skills"]
+L1_PREFIXES = ["memory/protocol-"]
+
+orphans = []
+for base in L1_DIRS:
+    full_base = os.path.join(script_dir, base)
+    if not os.path.isdir(full_base):
+        continue
+    for root, dirs, files in os.walk(full_base):
+        for fname in files:
+            full = os.path.join(root, fname)
+            rel = os.path.relpath(full, script_dir)
+            if rel not in all_known:
+                tag = "[maybe-L3]" if "extensions/" in rel else "[orphan]"
+                orphans.append((tag, rel))
+
+for tag, rel in sorted(orphans):
+    print(f"  {tag} {rel}")
+PYEOF
+)
+    if [ -n "$ORPHAN_OUTPUT" ]; then
+        echo ""
+        echo "⚠  Файлы в L1-директориях не найдены в манифесте (не удалять автоматически):"
+        echo "$ORPHAN_OUTPUT"
+        echo "   [orphan]   — возможно устаревший платформенный файл; удалите вручную или"
+        echo "               добавьте в deprecated_files если это намеренно удалённый артефакт."
+        echo "   [maybe-L3] — возможно пользовательское расширение (extensions/)."
+    fi
+fi
+
 # === Step 7: Commit changes ===
 echo ""
 echo "Фиксация изменений..."

@@ -56,10 +56,12 @@ Versioning: [Semantic Versioning](https://semver.org/).
 
 
 
+
 ## [Unreleased] — обновлено 2026-06-19
 
 ### Added
 
+- `1593f13` feat(WP-295): promote rule-engine.sh + generate-rules-registry.py to platform
 - `3a17360` feat(diagnose): promote diagnose-iwe v5.0 to platform (L1)
 - `3491420` feat(day-close): ask pilot for tomorrow priorities and update priorities.yaml
 - `1651574` feat(skills): promote 6 top skills to FMT with advisory fixes (WP-422)
@@ -80,6 +82,7 @@ Versioning: [Semantic Versioning](https://semver.org/).
 
 ### Changed
 
+- `70d540b` docs: remove PACK-MIM from CHANGELOG [protocol-close]
 - `ed2cca0` docs: add KIMI-SETUP.md — инструкция по подключению Kimi к IWE
 - `d98c62e` chore(skill-creator): bump version to 0.3.0 (sync from IWE)
 - `f820cb9` docs(local-llm): sync ADR-001 venv-Python note from author SoT (WP-404 Ф4)
