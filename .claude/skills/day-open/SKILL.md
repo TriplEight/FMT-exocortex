@@ -102,3 +102,6 @@ Day Open = протокол. Исполнять ТОЛЬКО пошагово ч
 **7b.** `bash .claude/scripts/load-extensions.sh day-open checks` → Exit 0: выполнить верификацию. БЛОКИРУЮЩЕЕ: commit запрещён до прохождения всех checks.
 **7c.** `git commit` + `git push`.
 **7d.** Compact dashboard → вывести в VS Code по шаблону «Шаблон compact dashboard» из `templates.md`.
+
+<!-- USER-SPACE -->
+<!-- /USER-SPACE -->
