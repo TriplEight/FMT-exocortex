@@ -70,7 +70,8 @@ Versioning: [Semantic Versioning](https://semver.org/).
 
 
 
-## [Unreleased] — обновлено 2026-06-25
+
+## [Unreleased] — обновлено 2026-06-26
 
 ### Added
 
@@ -117,6 +118,7 @@ Versioning: [Semantic Versioning](https://semver.org/).
 
 ### Fixed
 
+- `51cb56d` fix(#206/#207): edge-case tests for update.sh + Day Open token reduction
 - `64f690c` fix(#210): add EN section alternatives to protocol-artifact-validate.sh
 - `c3df1f8` fix(#205/#203/#204): --check guard, §9 neutral stub, release automation
 - `d8c8568` fix(validate-template): skip wakatime-heartbeat.sh in orphan hook check
