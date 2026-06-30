@@ -41,7 +41,7 @@ routing:
 
 **4b. Помидорки** — из `day-rhythm-config.yaml → pomodoro`.
 
-**4c. Календарь** — `mcp__claude_ai_Google_Calendar__list_events` для `pisarevden@gmail.com`, `denis@qfnetwork.xyz`, `denis@devcult.io`, диапазон 00:00–23:59 (Europe/Berlin). Объединить → секция «Календарь» (Встречи + Напоминания). `strategy_day`: диапазон 7 дней → «Календарь недели» в WeekPlan.
+**4c. Календарь** — `mcp__claude_ai_Google_Calendar__list_events` для каждого ID из `day-rhythm-config.yaml → calendar_ids`, диапазон 00:00–23:59 (Europe/Berlin). Объединить → секция «Календарь» (Встречи + Напоминания). `strategy_day`: диапазон 7 дней → «Календарь недели» в WeekPlan.
 
 **5. IWE за ночь** — `cd "$IWE_TEMPLATE" && bash update.sh --check` + Base-репо (FPF, SPF, ZP) на отставание от origin. Обновления + непроверенный Scout → «Требует внимания».
 
